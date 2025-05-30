@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- basic page needs -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About-Keerthana B</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+</head>
+
+<body id="top">
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- page wrap -->
+    <div id="page" class="s-pagewrap">
+        <!-- site header -->
+        <header class="s-header">
+            <div class="row s-header__inner width-sixteen-col">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="{% url 'home' %}">
+                            <img src="{% static 'images/Kb.png' %}" alt="Homepage">
+                        </a>
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+        <!-- site main content -->
+        <section id="content" class="s-content">
+            <section class="s-pageheader pageheader">
+                <div class="row">
+                    <div class="column xl-12">
+                        <h1 class="page-title">
+                            {#<span class="page-title__small-type text-pretitle">About</span>#}
+                            Hi, I'm Keerthana
+                        </h1>
+                    </div>
+                </div>
+            </section> <!-- end pageheader -->
+
+            <section class="s-pagecontent pagecontent">
+                <div class="row pageintro">
+ 
+                    <div class="column xl-6 lg-12 u-flexitem-x-right">
+           
+                    </div>
+                </div> <!-- end pageintro -->
+
+                <div class="row pagemedia">
+                    <div class="column xl-12">
+                        <figure class="page-media">
+                            <img src="{% static 'images/thumbs/about/2.jpg' %}" 
+                                 srcset="{% static 'images/thumbs/about/2.jpg' %} 2400w, 
+                                         {% static 'images/thumbs/about/2.jpg' %} 1200w, 
+                                         {% static 'images/thumbs/about/2.jpg' %} 600w" 
+                                 sizes="(max-width: 2400px) 100vw, 2400px" alt="">
+                        </figure>
+                    </div>
+                </div> <!-- end pagemedia -->
+
+                <div class="row width-narrower pagemain">
+                    <div class="column xl-12">
+                        <h2>How I Got Here</h2>
+                     
+                        <div class="grid-list-items list-items">
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Schooling</h6>
+                                </div>
+                                <p>
+                                Completed my schooling at Atomic Energy Central School, Kudankulam,
+                                 where I built a strong academic foundation and developed a disciplined, 
+                                 curiosity-driven approach to learning. With a focus on science and mathematics, 
+                                 laying the groundwork for my journey into engineering and technology.<br>
+                                 I passed 10th standard in 2020
+                                 and <br> 12th standard in 2022,
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">Under Graduation </h6>
+                                </div>
+                                <p>
+                                   Bachelor of Technology in Computer Science and Engineering 
+                                   (Specialization in IoT)<br>
+                                   CHRIST (Deemed to be University), Bangalore
+                                   Pursuing a comprehensive curriculum 
+                                   focused on core computing principles and IoT technologies,
+                                   combining academic rigor with hands-on projects in smart systems, 
+                                   embedded devices, and connected technologies.<br>
+                                   Graduation: March 2026
+                                
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">1st Internship</h6>
+                                </div>
+                                <p>
+                                I completed my first internship at GTTC (Government Tool Room and Training Centre),
+                                where I gained hands-on exposure to machining processes, 
+                                CAD/CAM tools, and industrial manufacturing practices. 
+                                This experience enhanced my understanding of precision engineering
+                                 and strengthened my interest in the integration of hardware and software systems.
+                                 May 2024
+                                </p>
+                            </div>
+                            <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">2nd Internship </h6>
+                                </div>
+                                <p>
+                                I interned at GKS Infotech as a Back-End Developer, 
+                                where I worked on developing and maintaining web applications 
+                                using the Django framework. During this internship,
+                                I contributed to building APIs and managing databases.
+                                This experience deepened my understanding of backend development, database design, and the importance of clean, modular code in real-world software projects.
+                                May 2025
+                            </p>
+                            </div>
+                             <div class="grid-list-items__item list-items__item u-remove-bottom">
+                                <div class="list-items__item-header">
+                                    <h6 class="list-items__item-small-title">3rd Internship</h6>
+                                </div>
+                                <p>
+                              I had the opportunity to intern at DRDO, 
+                              where I workedon a computer vision project focused 
+                              on object segmentation using the YOLO (You Only Look Once) 
+                              deep learning algorithm. My role involved training and fine-tuning 
+                              the model for accurate real-time detection and segmentation of target objects. 
+                              This experience sharpened my skills in machine learning, Python-based development,
+                               and applying AI techniques to solve practical defense-related challenges.
+                               May 2025
+                                </p>
+                            </div>
+                        </div> <!-- grid-list-items -->
+
+                        <h2>Why Work With Me</h2>
+                        <p>
+                            I am passionate about technology and driven by innovation, 
+                            always seeking opportunities to turn ideas into impactful solutions.
+                             With a strong foundation in Computer Science and Engineering (specializing in IoT), 
+                             I bring a balance of technical knowledge, creative problem-solving, and practical
+                             thinking to every project. I take ownership of my work, adapt quickly to new challenges,
+                             and thrive both in collaborative environments and independent roles. I value clear communication, 
+                             teamwork, and continuous learning — always aiming to deliver results that are thoughtful, efficient, 
+                             and high in quality. My strengths in analytical reasoning, leadership, and focused execution 
+                             make me a reliable contributor who’s ready to grow and make a difference.
+                        </p>
+                       
+
+                        <h2>A Few More Words About Myself</h2>
+                        <p>
+                        Beyond my technical skills, I take pride in being a proactive,
+                        dependable individual with a strong sense of responsibility. 
+                        I thrive in team environments where collaboration, mutual respect, 
+                        and open communication are valued. Whether leading a group or supporting one,
+                        I bring positivity, organization, and a solutions-oriented mindset to the table. 
+                        I’m adaptable to change, quick to learn, and genuinely enjoy taking on new 
+                        challenges that help me grow both professionally and personally.
+                        My ability to listen, stay composed under pressure, and remain committed to 
+                        quality makes me someone you can count on — not just for results, but for integrity, 
+                        reliability, and a can-do attitude.
+                        </p>
+                    </div> <!-- end grid-block -->
+                </div> <!-- end pagemain -->
+            </section> <!-- pagecontent -->
+
+        
+                </div> <!-- end s-testimonials__header -->
+
+                
+      
+
+                <!-- footer -->
+        <footer class="s-footer">
+                   
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                <a href="https://www.linkedin.com/in/keerthana-b-5879a22b6/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.036-1.85-3.036-1.851 0-2.135 1.445-2.135 2.937v5.668H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.369-1.849 3.599 0 4.263 2.368 4.263 5.455v6.285zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.07 0-1.143.926-2.07 2.07-2.07 1.143 0 2.07.927 2.07 2.07 0 1.142-.927 2.07-2.07 2.07zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.555C0 23.23.792 24 1.771 24h20.451C23.2 24 24 23.23 24 22.278V1.723C24 .771 23.2 0 22.225 0z"/>
+                    </svg>
+                    <span class="u-screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/iamkb-cpu" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.467-2.381 1.236-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.652.241 2.873.118 3.176.769.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.604-.015 2.896-.015 3.286 0 .319.219.694.825.576C20.565 21.795 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="u-screen-reader-text">GitHub</span>
+                </a>
+            </li>
+                    </ul> <!-- end s-footer__social -->
+                </div>
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Keerthana B</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">ThemeWagon</a></span>
+                    </p>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                    </a>
+                </div> <!-- end ss-go-top -->
+            </div>
+        </footer> <!-- end s-footer -->
+    </div> <!-- end page-wrap -->
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

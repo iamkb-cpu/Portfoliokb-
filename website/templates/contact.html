@@ -1,0 +1,30 @@
+<footer class="s-footer">
+    <div class="row s-footer__content">
+        <div class="column xl-6 lg-6 md-12 s-footer_block s-footer_about">
+            <h3>Let's Talk</h3>                      
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" class="contact-form__form" method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                <div class="form-field">
+                    <input type="text" name="name" id="contact-name" class="u-fullwidth" placeholder="Your Name" required>
+                </div>
+                <div class="form-field">
+                    <input type="tel" name="phone" id="contact-phone" class="u-fullwidth" placeholder="Your Contact Number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                </div>
+                <div class="form-field">
+                    <input type="email" name="email" id="contact-email" class="u-fullwidth" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-field">
+                    <textarea name="message" id="contact-message" class="u-fullwidth" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <div class="form-field">
+                    <input type="submit" value="Send Message" class="btn btn--primary btn--small u-fullwidth">
+                </div>
+                {% if status %}
+                <div class="contact-status">{{ status }}</div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</footer>
